@@ -1,0 +1,1 @@
+I'm Veronica. I build User Interfaces with a focus on design systems.

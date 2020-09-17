@@ -1,0 +1,8 @@
+{
+    "title": "Home",
+    "gallery": [{
+      "title": "Design System",
+      "copy": "UI Toolkit and Styleguide.",
+      "image": "../images/gallery/placeholder.png"
+    }]
+  }

@@ -1,0 +1,21 @@
+{
+  "title": "Home",
+  "content": "intro.md",
+  "gallery": [{
+    "title": "Design System",
+    "copy": "UI Toolkit and Styleguide.",
+    "image": "../images/gallery/motif-snap.jpg"
+  },
+  {
+    "title": "Design System",
+    "copy": "UI Toolkit and Styleguide.",
+    "image": "../images/gallery/motif-snap.jpg"
+  },
+  {
+    "title": "Design System",
+    "copy": "UI Toolkit and Styleguide.",
+    "image": "../images/gallery/placeholder.jpg"
+  }]
+}
+
+
