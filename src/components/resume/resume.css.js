@@ -1,9 +1,12 @@
 import styled from 'styled-components';
+import MEDIA from '../../helpers/mediaTemplates';
 
 export const Container = styled.div`
   height: min-content;
   transition: 0.2s ease-in-out;
-  padding: 14rem 8rem;
+  padding: 14rem 8rem ${MEDIA.TABLET`
+  padding: 3rem 2rem;
+`};
 `;
 
 export const Grid = styled.div`
@@ -36,6 +39,7 @@ export const Grid = styled.div`
     display: flex;
     align-items: center;
     transition: 0.2s ease-in-out;
+    cursor: pointer;
     &:hover {
       transform: scale(1.06);
       font-weight: 600;
@@ -43,7 +47,7 @@ export const Grid = styled.div`
 
       img {
         transform: scale(1.15);
-        filter: contrast(0.9);
+        filter: contrast(0.8);
       }
     }
   }
@@ -56,7 +60,7 @@ export const Grid = styled.div`
   img {
     padding-left: 1rem;
     display: flex;
-    filter: contrast(0.4);
+    filter: contrast(0.6);
     transition: 0.2s ease-in-out;
   }
 `;

@@ -22,7 +22,7 @@ const Index = ({ data }) => (
       <Box>
         <Fade bottom>
           <Title as="h2" size="large">
-            Im Veronica. I build User Interfaces with a{' '}
+            I&apos;m Veronica. I build User Interfaces with a{' '}
             <Italic>focus on</Italic> and <Italic>love for </Italic>
             design systems{' '}
             <IconWrap>

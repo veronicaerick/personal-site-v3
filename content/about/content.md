@@ -1,21 +1,3 @@
-Find the repository [on GitHub](https://github.com/fabe/gatsby-universal).
+Im Veronica. I'm an SF native, lover of design and UX and am always open to chatting about new/different opportunities (or dogs or beer 🙃). I've been circling around the Bay Area for my whole life; SF for childhood, wine country pre college and UC Berkeley for undergrad - go Bears 🐻- , and more recently back in SF working in tech for the last five years. I am passionate about mental health advocacy and rescuing dogs. If you'd like to see more work, please reach out (I have more stuff of varying focuses stashed locally).
 
-```
-# Installation
-gatsby new my-site https://github.com/fabe/gatsby-universal
-
-# To develop
-yarn develop
-
-# To build
-yarn build
-
-# To test SSR (for Lighthouse etc.)
-yarn ssr
-
-# To format JS (precommit)
-yarn format
-
-# To generate favicons (included in `build`)
-yarn build:favicons
-```
+This site was built with React, Gatsby, styled-components and alot of linear-gradients (they're still cool, shh).

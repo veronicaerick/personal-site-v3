@@ -10,11 +10,11 @@ import {
   Subtitle,
 } from '../bits/bits.css';
 import SectionTitle from 'components/section-title/title';
-import Icon from './science';
-import Pencil from './pencil';
-import grid from './grid.png';
-import plants from './plants.png';
-import icons from './icons.png';
+import grid from './images/grid.png';
+import plants from './images/plants.png';
+import icons from './images/icons.png';
+import designSystem from './images/design-system.png';
+
 const Bits = () => (
   <Container>
     <Grid>
@@ -26,18 +26,17 @@ const Bits = () => (
               <React.Fragment>
                 <Images>
                   <Image>
-                    <span className="image">{image.image}</span>
-                    <div className="overlay"></div>
-                    <div className="overlay-visible"></div>
+                    <a href={image.href}>
+                      <span className="image">{image.image}</span>
+                      <div className="overlay"></div>
+                      <div className="overlay-visible"></div>
+                    </a>
                   </Image>
                 </Images>
 
                 <ImageMeta className="image-meta">
                   {image.title}
-                  <Subtitle className="sub-title">
-                    {/* <Pencil width={18} height={18} /> */}
-                    {image.subTitle}
-                  </Subtitle>
+                  <Subtitle className="sub-title">{image.subTitle}</Subtitle>
                 </ImageMeta>
               </React.Fragment>
             </div>
@@ -66,6 +65,7 @@ const images = [
     ),
     title: 'Gradient Grid Experiment',
     subTitle: 'codepen playground',
+    href: 'https://codepen.io/vee1234/full/OJNmypN',
   },
   {
     image: (
@@ -78,6 +78,7 @@ const images = [
     ),
     title: 'Grid Experiment with Plants',
     subTitle: 'codepen playground',
+    href: 'https://codepen.io/vee1234/full/QWNpxWL',
   },
   {
     image: (
@@ -90,17 +91,18 @@ const images = [
     ),
     title: 'Icon Filter Background',
     subTitle: 'codepen playground',
+    href: 'https://codepen.io/vee1234/full/yLOvNYo',
   },
-  {
-    image: (
-      <img
-        src={icons}
-        alt="icons"
-        key="icons"
-        style={{ maxWidth: '100%', height: 'auto' }}
-      />
-    ),
-    title: 'Icon Filter Background',
-    subTitle: 'codepen playground',
-  },
+  // {
+  //   image: (
+  //     <img
+  //       src={designSystem}
+  //       alt="design"
+  //       key="design"
+  //       style={{ maxWidth: '100%', height: 'auto' }}
+  //     />
+  //   ),
+  //   title: 'Design System',
+  //   subTitle: 'medium article',
+  // },
 ];

@@ -34,7 +34,10 @@ export const DialogHeader = styled.div`
 export const Container = styled.div`
   height: min-content;
   transition: 0.2s ease-in-out;
-  padding: 14rem 8rem;
+  padding: 14rem 8rem ${MEDIA.TABLET`
+  padding: 3rem 2rem;
+
+`};
 `;
 
 export const ImageContainer = styled.div`
@@ -72,7 +75,7 @@ export const Image = styled.div`
   }
 
   .overlay-visible {
-    background: rgba(167, 167, 222, 0.3);
+    background: rgba(71, 71, 216, 0.5);
     position: absolute;
     top: 0;
     right: 0;
@@ -80,8 +83,9 @@ export const Image = styled.div`
     bottom: 0;
     color: white;
     opacity: 0.5;
-    -webkit-transition: opacity 0.5s;
     transition: opacity 0.5s;
+    border-radius: 5px;
+    cursor: pointer;
   }
 
   .image {
@@ -105,7 +109,7 @@ export const ImageMeta = styled.div`
 export const Subtitle = styled.div`
   font-size: 1.75rem;
   color: #3352f4;
-  padding: 0.5rem;
+  padding: 0.5rem 0;
   display: flex;
 `;
 

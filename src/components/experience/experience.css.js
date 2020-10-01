@@ -1,10 +1,13 @@
 import styled from 'styled-components';
 import { mainText } from '../../constants/theme';
+import MEDIA from '../../helpers/mediaTemplates';
 
 export const Container = styled.div`
   height: min-content;
   transition: 0.2s ease-in-out;
-  padding: 10rem 8rem;
+  padding: 10rem 8rem ${MEDIA.TABLET`
+  padding: 4rem;
+`};
 `;
 
 export const Grid = styled.div`

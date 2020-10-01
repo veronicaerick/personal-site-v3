@@ -5,7 +5,9 @@ import MEDIA from '../../helpers/mediaTemplates';
 export const Container = styled.div`
   height: min-content;
   transition: 0.2s ease-in-out;
-  padding: 6rem;
+  padding: 6rem ${MEDIA.TABLET`
+  padding: 3rem 2rem;
+`};
 `;
 
 export const ImageContainer = styled.div`
