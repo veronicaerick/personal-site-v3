@@ -227,10 +227,10 @@ function Gallery() {
         </DialogHeader>
         <DialogContent style={{ background: '#f5f5f5' }}>
           <Text>
-            I helped develop LiveRamps UI Toolkit and Styleguide. The project
-            consisted of working with the UX and design team to implement a full
-            React component library, color palette, icon library and documenting
-            interaction patterns over the course of two years. <br></br>
+            I helped develop LiveRamp&apos;s UI Toolkit and Styleguide, Motif.
+            The project consisted of working with the UX and design team to
+            implement a full React component library, color palette, icon
+            library and documentation of interaction patterns. <br></br>
             <br></br>
             My high-level goals were to:
             <ul>
@@ -240,7 +240,14 @@ function Gallery() {
               </li>
               <li>
                 - Collaborate with the front-end team to implement components
-                and reusable patterns ostensible to use in 5+ applications
+                and reusable patterns to be used in 3+ SaaS web applications
+              </li>
+              <li>
+                - Deprecate legacy toolkit and increase Motif&apos;s adoption
+              </li>
+              <li>
+                - Improve the tooling and accesibility of Design System
+                Management
               </li>
             </ul>
             <BadgeContainer>

@@ -9,7 +9,6 @@ import { Container } from '../page-style/about/about.css';
 
 const About = ({ data }) => (
   <Layout>
-    {/* <Head pageTitle={data.aboutJson.title} /> */}
     <Box style={{ padding: '6rem' }}>
       <img src={headshot} alt="headshot" width="300px" />
       <Container>
@@ -26,15 +25,16 @@ const About = ({ data }) => (
           <span role="img" aria-label="bear">
             🐻
           </span>
-          - , and more recently back in SF working in tech for the last five
-          years. I am passionate about mental health advocacy and rescuing dogs.
-          If you&apos;d like to see more work, please reach out (I have more
-          stuff of varying focuses stashed locally).
+          - , and more recently back in SF working in tech for the last five-ish
+          years. I am passionate about mental health advocacy, rescuing dogs,
+          and good beer to name a few. If you&apos;d like to see more work,
+          please email me (I have more samples of varying focuses stashed
+          locally).
         </p>
         <br></br>
         <p>
           This site was built with React, Gatsby, styled-components and alot of
-          linear-gradients (they&apos;re still cool, shh).
+          linear-gradients (they&apos;re still cool).
         </p>
       </Container>
     </Box>
