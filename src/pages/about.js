@@ -4,12 +4,12 @@ import { graphql } from 'gatsby';
 import Layout from 'components/layout';
 import Box from 'components/box';
 import Head from 'components/head';
-import headshot from './headshot.png';
-import { Container } from './about/about.css';
+import headshot from '../page-style/images/headshot.png';
+import { Container } from '../page-style/about/about.css';
 
 const About = ({ data }) => (
   <Layout>
-    <Head pageTitle={data.aboutJson.title} />
+    {/* <Head pageTitle={data.aboutJson.title} /> */}
     <Box style={{ padding: '6rem' }}>
       <img src={headshot} alt="headshot" width="300px" />
       <Container>
@@ -41,21 +41,4 @@ const About = ({ data }) => (
   </Layout>
 );
 
-About.propTypes = {
-  data: PropTypes.object.isRequired,
-};
-
 export default About;
-
-export const query = graphql`
-  query AboutQuery {
-    aboutJson {
-      title
-      content {
-        childMarkdownRemark {
-          html
-        }
-      }
-    }
-  }
-`;

@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Layout from 'components/layout';
-import Articles from 'components/articles';
 import Bits from 'components/bits';
 import Box from 'components/box';
 import Experience from 'components/experience';
@@ -9,12 +8,11 @@ import Fade from 'react-reveal/Fade';
 import Gallery from 'components/gallery';
 import Footer from 'components/footer';
 import Hero from 'components/hero';
-import IOExample from 'components/io-example';
 import Resume from 'components/resume';
 import Title from 'components/title';
 import { graphql } from 'gatsby';
-import { Italic, IconWrap } from './index.css';
-import Icon from './hero';
+import { Italic, IconWrap } from '../page-style/index.css';
+import Icon from '../images/hero';
 
 const Index = ({ data }) => (
   <Layout>

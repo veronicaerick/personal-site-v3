@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import {
   Badge,
   BadgeContainer,
@@ -16,7 +15,7 @@ import {
   DialogHeader,
 } from './gallery.css';
 import SectionTitle from 'components/section-title/title';
-import Storybook from './images/storybook.js';
+// import Storybook from './images/storybook.js';
 import Button from 'components/button/button';
 import Dialog from '@material-ui/core/Dialog';
 import Tooltip from '@material-ui/core/Tooltip';
@@ -256,9 +255,9 @@ function Gallery() {
                   width={'26px'}
                 />
               </Badge>
-              <Badge href="https://www.example.com" target="_blank">
+              {/* <Badge href="https://www.example.com" target="_blank">
                 Storybook <Storybook width={'24px'} height={'24px'} />
-              </Badge>
+              </Badge> */}
             </BadgeContainer>
           </Text>
           <DialogImages>
@@ -306,9 +305,9 @@ function Gallery() {
             insights they wanted to see at a certain step in a common workflow.
           </Text>
           <DialogImages>
+            <img src={dataVizThree} alt="dv3" />
             <img src={dataVizOne} alt="dv1" />
             <img src={dataVizTwo} alt="dv2" />
-            <img src={dataVizThree} alt="dv3" />
           </DialogImages>
         </DialogContent>
         <DialogActions style={{ background: '#f5f5f5' }}>
@@ -320,10 +319,6 @@ function Gallery() {
     </div>
   );
 }
-
-Gallery.propTypes = {
-  children: PropTypes.node.isRequired,
-};
 
 export default Gallery;
 

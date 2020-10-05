@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import {
   Container,
   Grid,
@@ -26,7 +25,7 @@ const Bits = () => (
               <React.Fragment>
                 <Images>
                   <Image>
-                    <a href={image.href}>
+                    <a href={image.href} target="_blank" rel="noreferrer">
                       <span className="image">{image.image}</span>
                       <div className="overlay"></div>
                       <div className="overlay-visible"></div>
@@ -46,10 +45,6 @@ const Bits = () => (
     </Grid>
   </Container>
 );
-
-Bits.propTypes = {
-  children: PropTypes.node.isRequired,
-};
 
 export default Bits;
 
@@ -93,16 +88,18 @@ const images = [
     subTitle: 'codepen playground',
     href: 'https://codepen.io/vee1234/full/yLOvNYo',
   },
-  // {
-  //   image: (
-  //     <img
-  //       src={designSystem}
-  //       alt="design"
-  //       key="design"
-  //       style={{ maxWidth: '100%', height: 'auto' }}
-  //     />
-  //   ),
-  //   title: 'Design System',
-  //   subTitle: 'medium article',
-  // },
+  {
+    image: (
+      <img
+        src={designSystem}
+        alt="design"
+        key="design"
+        style={{ maxWidth: '100%', height: 'auto' }}
+      />
+    ),
+    title: 'Design System/Invision + Storybook',
+    subTitle: 'medium article',
+    href:
+      'https://medium.com/@veronicaerick/using-storybook-invisions-design-system-manager-to-align-design-and-engineering-883727596e60',
+  },
 ];

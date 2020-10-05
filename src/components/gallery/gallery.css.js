@@ -16,9 +16,12 @@ export const Text = styled.div`
 `;
 
 export const DialogImages = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   img {
-    max-width: 100%;
-    height: 'auto';
+    max-width: 95%;
+    height: auto;
     margin: 2rem 0;
     box-shadow: 0px 0px 6px 0px #9e9e9e8c;
   }
@@ -36,7 +39,6 @@ export const Container = styled.div`
   transition: 0.2s ease-in-out;
   padding: 14rem 8rem ${MEDIA.TABLET`
   padding: 3rem 2rem;
-
 `};
 `;
 
@@ -89,7 +91,8 @@ export const Image = styled.div`
   }
 
   .image {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 
   img {
